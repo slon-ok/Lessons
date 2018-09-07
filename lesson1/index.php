@@ -13,6 +13,19 @@
                 <?php echo strftime('Сегодня %d-%m-%Y-%H-%M-%S'); ?>
             </blockquote>
             
+            <?php 
+            // удаление переменной
+            $per = 10;
+            unset($per);
+            $name = "big";
+            //смена кодировки
+            echo iconv(windows-1251, UTF-8, $name);
+            
+            // классическое создание констант
+            define(OYAEBYCONST, "Vasya");
+            echo OYAEBYCONST;
+            ?>
+            
         </div>
     </body>
 </html>
