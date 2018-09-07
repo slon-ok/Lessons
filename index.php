@@ -10,7 +10,7 @@
         <div>
             <h1>Lessons</h1>
             <p><a href="/lesson1/">Lesson 1</a></p>
-            <br /> 
+            <br />
             <p><a href="/lesson2/">Lesson 2</a></p>
         </div>
     </body>
