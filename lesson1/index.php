@@ -87,9 +87,79 @@
                     // Определение типа переменной
                     echo 'Переменная $arayVariable имеет тип ' . gettype($arrayVariable) . '<br />';
                     
+                    // Преобразование типов
+                    
+                    echo '<p><h2>Преобразование типов</h2>';
+                    
+                    $newVar = (string)$integerVariable;
+                    echo' переменная $integerVariable имеет тип ' . gettype($integerVariable);
+                    echo '<br />';
+                    echo ', переменная $newVar имеет тип ' . gettype($newVar);
+                    echo '<br />';
+                    $newVar = (bool)$newVar; 
+                    echo ' переменная $newVar сейчас имеет тип ' . gettype($newvar);
+                    echo '<br />';
+                    $newVar = (double)$newVar;
+                    echo ' переменная $newVar имеет тип ' . gettype($newvar);
+                    echo '<br />';
+                    
+                    
+                    echo '<h1> Константы </h1>';
+                    
+                    ?>
+                    
+                    <?php 
+                        // удаление переменной
+                        $per = 10;
+                        unset($per);
+                        $name = "big";
+                        //смена кодировки
+                        echo iconv(windows-1251, UTF-8, $name);
+
+                        // классическое создание констант, константа присваивается 1 раз!!!
+
+                        define("OYAEBYCONST", "Vasya");
+                        echo OYAEBYCONST;
+
+                        // с версии 5.3 можно присваивать через const
+                        const HOPLALA = 100; // до версии 5.6 нельзя присваивать выражения
+                        //const HOPLALA56 = 100 + HOPLALA; // c версии 5.6 !
+
+                        // использовать не стоит, для общего развития
+                        // разрешение для константы быть регистронезависимой
+                        // третим параметром добавляется регистронезависимость последнего символа
+                        define("AAA", " 100", 1); 
+                        echo AAa;
+                        echo '<br />';
+                    
+                        $var = 10 +10; //20
+                        $var2 = 10 /2; 
+                        $var3 = $var * 2 - $var2; //35
+                        
+                        echo $var . '<br />';
+                        echo '<br />';
+                        echo $var2 . '<br />';
+                        echo '<br />';
+                        echo $var3 . '<br />';
+                        
+                        echo '<h1>Математические операции со строками</h1>';
+                        
+                        $var = 'строка';
+                        $var2 = 'вторая строка';
+                        $var3 = $var . ' :: ' . $var2;
+                        
+                        echo $var . '<br />';
+                        echo '<br />';
+                        echo $var2 . '<br />';
+                        echo '<br />';
+                        echo $var3 . '<br />';
+                    ?>
+
+                   
+            
                     
                 
-            ?>
+            
             
         </div>
     </body>
