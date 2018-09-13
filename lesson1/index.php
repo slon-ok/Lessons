@@ -3,6 +3,15 @@
     // задаем кодировку страницы
     header('Content-type: text/html; charset=utf-8');
 ?>
+
+<?php 
+    // УСТАНОВКА ЛОКАЛИ И ДАТЫ
+    setlocale(LC_ALL, "Ukrainian");
+    $day = strftime('%d');
+    $month = strftime('%m');
+    $year = strftime('%Y');
+?>
+
 <html>
     <head>
         <title>TODO supply a title</title>
