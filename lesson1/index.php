@@ -59,11 +59,35 @@
                 
                 // > //Действия с переменной
                 
-                    // Проверка на существование 
+                    // Проверка на существование, isset возвращает единицу 
+                    // или null  если переменная не инициализированна
                     echo '<p><h2>Проверка на существование - isset()</h2>';
                     
                     echo 'Проверка переменной $integerVariable; isset($integerVariable) = '
                         . isset($integerVariable) . '<br />';
+                    echo 'Проверка переменной $integerVariable2; isset($integerVariable2) = '
+                        . isset($integerVariable2) . '<br />';
+                    echo '</p>';
+                    
+                    echo '<p><h2>Уничтожение переменной - unset($integerVariable)</h2>';
+                        unset($integerVariable);
+                        
+                    echo 'Проверка переменной $integerVariable; isset($integerVariable) = '
+                        . isset($integerVariable) . '<br />';
+                    echo'</p>';
+                    
+                    $integerVariable = 10;
+                    
+                    //> Определение типа переменной.
+                    if(is_integer($integerVariable)){
+                        echo '$integerVariable - целое число <br />';
+                    } else {
+                        echo 'переменная $integerVariable не является целым числом <br />';
+                    }
+                    // Определение типа переменной
+                    echo 'Переменная $arayVariable имеет тип ' . gettype($arrayVariable) . '<br />';
+                    
+                    
                 
             ?>
             
