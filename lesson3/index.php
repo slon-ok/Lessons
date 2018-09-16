@@ -41,7 +41,25 @@
                      память          и побольше детей. 
                      Закрывающий идентификатор херидока, обязательно без табуляции с начала строки. 
 bigcitata;
-            
+            echo '<br />';
+             echo "<h1>Экранирование переменных</h1>";
+             $juice = "apple";
+             echo '<br />';
+             echo "\$juice = apple;";
+             echo '<br />';
+             echo "He drank some $juice juice.";
+             echo '<br />';
+             echo "He drank some juice made of $juices.";
+             echo '<br />';
+             echo "//Решение";
+             echo '<br />';
+             echo "He drank some juice made of {\\\$juice}s.";
+             echo '<br />';
+             echo "He drank some juice made of {$juice}s.";
+             echo '<br />';
+             
+             
+             
             ?>
             
             <h2>Laba 3</h2>
