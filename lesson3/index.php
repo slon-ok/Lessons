@@ -57,6 +57,17 @@ bigcitata;
              echo '<br />';
              echo "He drank some juice made of {$juice}s.";
              echo '<br />';
+             echo "// Доступ к символу в строке";
+             echo '<br />';
+             echo "\$str = 'This is a test.'";
+             echo '<br />';
+             echo "//Получение третьего символа из строки";
+             echo '<br />';
+             echo "\$first = \$str{2};";
+             echo '<br />';
+             echo "Длина строки: \$len = strlen();";
+             echo '<br />';
+             
              
              
              
