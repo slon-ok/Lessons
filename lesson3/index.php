@@ -77,6 +77,20 @@ bigcitata;
              // или так
              $last = $str{strlen($str)-1};
              
+             // isset() веренет тру или фолс если значение null
+             
+             echo <<<vstavka
+             ОПЕРАЦИИ СРАВНЕНИЯ:
+              echo 1 == "1"; //true
+              echo 1 === "1"; // false, жесткое сравнение
+              echo a != b; ne ravno, tru esli ne ravno
+              echo a !== b; tojdestvenno ne ravno true esli raznie tipi
+             
+
+vstavka;
+             
+             
+             
              
              
              
