@@ -80,26 +80,43 @@ bigcitata;
              // isset() веренет тру или фолс если значение null
              
              echo <<<vstavka
-             ОПЕРАЦИИ СРАВНЕНИЯ:
-              echo 1 == "1"; //true
-              echo 1 === "1"; // false, жесткое сравнение
-              echo a != b; ne ravno, tru esli ne ravno
-              echo a !== b; tojdestvenno ne ravno true esli raznie tipi
+             ОПЕРАЦИИ СРАВНЕНИЯ:<br />
+             echo 1 == "1"; //true <br /> 
+             echo 1 === "1"; // false, жесткое сравнение<br />
+             echo a != b; ne ravno, tru esli ne ravno<br />
+             echo a !== b; tojdestvenno ne ravno true esli raznie tipi<br />
+             <br />
+             ЛОГИЧЕСКИЕ ОПЕРАТОРЫ<br />
+             $a and $b; логическое И TRUE, если и $a, и $b TRUE.<br />
+             $a or $b;  логическое ИЛИ 	TRUE, если или $a, или $b TRUE.<br />
+             $a xor $b; исключающее или TRUE, если $a, или $b TRUE, но не оба.<br />
+             $a && $b;  логическое и жесткое, если не первое, второе не исполняется<br />
+             $a || $b;  логическое или жесткое<br />
              
 
 vstavka;
-             
-             
-             
-             
-             
-             
-             
-             
             ?>
             
             <h2>Laba 3</h2>
             <?php
+            /*Приветствие*/
+            $hour = (int)strftime('%H');
+            $vremiaSytok; 
+            if ($hour > 0 and $hour < 6){
+                $vremiaSytok = "night";
+            } elseif($hour > 6 and $hour < 12){
+                $vremiaSytok = "morning";
+            } elseif($hour > 12 and $hour < 18){
+                $vremiaSytok = "day";
+            } elseif($hour > 18 and $hour <= 23){
+                $vremiaSytok = "evening";
+            }
+            $welcome = "Welcom! Good {$vremiaSytok}!";
+            echo '<br />';
+            echo $welcome;
+            echo '<br />';
+            echo $hour;
+            
             
             ?>
             
