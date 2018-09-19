@@ -118,16 +118,16 @@ vstavka;
             echo $hour;
             
             echo <<< vstavka
-            if($day = 2)<br />
+            if($ day = 2)<br />
                     echo "Понедельник";<br />
-            elseif ($day = 3)<br />
+            elseif ($ day = 3)<br />
                     echo "Vtornik";<br />
-            elseif ($day = 4)<br />
+            elseif ($ day = 4)<br />
                     echo "Sreda";<br />
             else "neizvestnii den";<br />
                     
-            $i = 2;<br />
-            switch($i){<br />
+            $ i = 2;<br />
+            switch($ i){<br />
                 case 0: <br />
                     echo "Результат: 0"; <br />
                     break;<br />
