@@ -125,6 +125,23 @@ vstavka;
             elseif ($day = 4)
                     echo "Sreda";
             else "neizvestnii den";
+                    
+            $i = 2;
+            switch($i){
+                case 0: 
+                    echo "Результат: 0"; 
+                    break;
+                case 1: 
+                    echo "Результат: 1"; 
+                    break;
+                case 2: 
+                    echo "Результат: 2"; 
+                    break;
+                case 3: 
+                    echo "Результат: 3"; 
+                    break;
+            }
+                    
 
 vstavka;
                     ?>
