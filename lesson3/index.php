@@ -117,8 +117,17 @@ vstavka;
             echo '<br />';
             echo $hour;
             
-            
-            ?>
+            echo <<< vstavka
+            if($day = 2)
+                    echo "Понедельник";
+            elseif ($day = 3)
+                    echo "Vtornik";
+            elseif ($day = 4)
+                    echo "Sreda";
+            else "neizvestnii den";
+
+vstavka;
+                    ?>
             
         </div>
     </body>
