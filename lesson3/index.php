@@ -63,10 +63,21 @@ bigcitata;
              echo '<br />';
              echo "//Получение третьего символа из строки";
              echo '<br />';
-             echo "\$first = \$str{2};";
+             echo "\$first = \$str{2};// is 'i'";
              echo '<br />';
              echo "Длина строки: \$len = strlen();";
              echo '<br />';
+             
+             // получение последнего символа строки 
+             $name = "John!";
+             $len = strlen($name);
+             $pos = $len - 1;
+             echo $name{$pos};
+             
+             // или так
+             $last = $str{strlen($str)-1};
+             
+             
              
              
              
