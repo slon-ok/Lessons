@@ -14,7 +14,7 @@
         <h1>Lesson 4</h1>
         <h2>Switch</h2>
         <?php 
-            $size = ini_get("post_max_size");// 8M
+            $size = ini_get("post_max_size"); // 8M
             $letter = $size{strlen($size) - 1}; // M
             $size = (int)$size; // 8
             
@@ -25,6 +25,18 @@
             }
             
             echo $size;
+        ?>
+        
+        <h1>ARRAY</h1>
+        <?php 
+        
+        $arr = [];          // создание массива c версии 5.4
+        $arr1 = array();    // создание массива до версии 5.4 аналогичен первому
+        $arr = [];          // при приведении типов пустой массив это FALSE
+        $arr = ["John", "root", "1234"]; // создание и инициализация
+        echo $arr[0];       // выведение первого элемента 
+        echo count($arr);   // количество элементов массива
+        
         ?>
     </body>
 </html>
