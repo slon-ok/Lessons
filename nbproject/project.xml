@@ -5,5 +5,13 @@
         <data xmlns="http://www.netbeans.org/ns/php-project/1">
             <name>lessons</name>
         </data>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>Домой</word>
+            <word>Калькулятор</word>
+            <word>Констакты</word>
+            <word>Таблица</word>
+            <word>умножения</word>
+            <word>ь</word>
+        </spellchecker-wordlist>
     </configuration>
 </project>

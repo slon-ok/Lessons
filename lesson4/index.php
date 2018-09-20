@@ -6,7 +6,7 @@
 
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Lesson4</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -96,8 +96,39 @@
         
         echo $users[1]["login"]; //mike
         
-        
+        // структура навигации по сайту это массив
         
         ?>
+        
+        <h1>LABA - МЕНЮ</h1>
+        
+        <!---<ul>
+            <li><a href="index.php">Домой</a></li>
+            <li><a href="about.php">О нас</a></li>
+            <li><a href="contact.php">Констакты</a></li>
+            <li><a href="table.php">Таблица умножения</a></li>
+            <li><a href="calc.php">Калькулятор</a></li>
+
+        </ul> -->
+        <?php
+        $leftMenu = [
+            ['link' => 'Домой',       'href' => '../index.php'],
+            ['link' => 'О нас',       'href' => 'about.php'],
+            ['link' => 'Контакты',    'href' => 'contact.php'],
+            ['link' => 'Таблица',     'href' => 'table.php'],
+            ['link' => 'Калькулятор', 'href' => 'calc.php']
+        ];
+        ?>
+        
+        <ul>
+            <li><a href="<?= $leftMenu[0]['href']?>"><?=$leftMenu[0]['link']?></a></li>
+            <li><a href="<?= $leftMenu[1]['href']?>"><?=$leftMenu[1]['link']?></a></li>
+            <li><a href="<?= $leftMenu[2]['href']?>"><?=$leftMenu[2]['link']?></a></li>
+            <li><a href="<?= $leftMenu[3]['href']?>"><?=$leftMenu[3]['link']?></a></li>
+            <li><a href="<?= $leftMenu[4]['href']?>"><?=$leftMenu[4]['link']?></a></li>
+
+        </ul>
+
+        
     </body>
 </html>
