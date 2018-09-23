@@ -103,7 +103,7 @@
             <?php
                 while($i < 9){
                     $i++;
-                    if($i == 5) Continue 1;
+                    if($i == 5) Continue;
                     echo $i;
                 }
             ?>
@@ -134,11 +134,58 @@
             
             <h2>Foreache</h2>
             <?php 
-            $array = [1,5, "vanya"];
-            foreach($array as $key => $val){
+            $arrr= [            // ассоциативный массив
+                "name"=>"John",
+                "login" => "root",
+                "pass" =>"1234"
+            ];
+            foreach($arrr as $key => $val){ // ($arr as $val)
                     echo $key . " ---- " . $val . "<br />";
             }
+            
+            $arr_test = [1,2,3,4,5];
+            print_r($arr_test);
+            echo "<br />";
+            foreach($arr_test as &$v){  // & для работы со ссылочными переменными
+                $v *= 10;  // после испльзования $v остается. и при коде: 
+            }              // $v = 100 после foreach, присвоит данные последнему  
+            echo "<br />"; // элементу массива
+            print_r($arr_test);
+            
             ?>
+            <h1>Новое меню через Foreach</h1>
+            <?php 
+            
+                $leftMenu = [
+                    ['link' => 'Домой',       'href' => '../index.php'],
+                    ['link' => 'О нас',       'href' => 'about.php'],
+                    ['link' => 'Контакты',    'href' => 'contact.php'],
+                    ['link' => 'Таблица',     'href' => 'table.php'],
+                    ['link' => 'Калькулятор', 'href' => 'calc.php']
+                ];
+            
+                // Menu
+            echo "<ul>";
+            foreach($leftMenu as $item){
+                echo "<li>";
+                echo "<a href='{$item['href']}'>{$item['link']}</a>";
+                // или так echo "<a href='$item[href]'>$item[link]</a>";
+                // или не указывать кавычки для ключей
+                // ну лучше с фигурными скобками, ибо путаница с именами
+                // парсер расценивает как константу, и сначала ищет ее
+                // но в двойных кавычках константы не подставляются
+                // поэтому можно писать и без ключей
+                echo "</li>";
+            }
+            echo "</ul>";
+            ?>
+            
+            <?php
+                //FOREACH работает только с массивами, при подстановке
+                // в первый аргумент передать другой тип, выйдет ошибка
+                // INVALID ARGUMENT in foreach
+            ?>
+            
         <div>
     </body>
 </html>

@@ -18,7 +18,9 @@
             <p><a href="/lesson4/">Lesson 4</a></p>
             <br />
             <p><a href="/lesson5/">Lesson 5</a></p>
-            
+            <br />
+            <p><a href="/lesson6/">Lesson 6</a></p>
+            <br />
         </div>
     </body>
 </html>
