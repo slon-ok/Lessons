@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<? php
+<?php
     // задаем кодировку страницы
-    header('Content-type: text/html; charset=utf-8');
+    echo header('Content-type: text/html; charset=utf-8');
 ?>
 
 <?php 
@@ -131,7 +131,7 @@
                         echo OYAEBYCONST;
 
                         // с версии 5.3 можно присваивать через const
-                        const HOPLALA = 100; // до версии 5.6 нельзя присваивать выражения
+                        //const HOPLALA = 100; // до версии 5.6 нельзя присваивать выражения
                         //const HOPLALA56 = 100 + HOPLALA; // c версии 5.6 !
 
                         // использовать не стоит, для общего развития
@@ -164,12 +164,6 @@
                         echo $var3 . '<br />';
                     ?>
 
-                   
-            
-                    
-                
-            
-            
         </div>
     </body>
 </html>

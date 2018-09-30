@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<? php
+<?php
     // задаем кодировку страницы
     header('Content-type: text/html; charset=utf-8');
 ?>

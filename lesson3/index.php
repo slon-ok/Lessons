@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<? php
+<?php
     // задаем кодировку страницы
     header('Content-type: text/html; charset=utf-8');
 ?>
-<? short_open_tag=On ?>
 <html>
     <head>
         <title>Lesson3.</title>

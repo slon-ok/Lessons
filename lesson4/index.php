@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<? php
+<?php
     // задаем кодировку страницы
     header('Content-type: text/html; charset=utf-8');
 ?>
@@ -30,8 +30,8 @@
         <h1>ARRAY</h1>
         <?php 
         
-        $arr = [];          // создание массива c версии 5.4
-        $arr1 = array();    // создание массива до версии 5.4 аналогичен первому
+        //$arr = [];          // создание массива c версии 5.4
+        //$arr1 = array();    // создание массива до версии 5.4 аналогичен первому
         $arr = [];          // при приведении типов пустой массив это FALSE
         $arr = ["John", "root", "1234"]; // создание и инициализация
         echo $arr[0];       // выведение первого элемента 
@@ -112,11 +112,11 @@
         </ul> -->
         <?php
         $leftMenu = [
-            ['link' => 'Домой',       'href' => '../index.php'],
-            ['link' => 'О нас',       'href' => 'about.php'],
-            ['link' => 'Контакты',    'href' => 'contact.php'],
-            ['link' => 'Таблица',     'href' => 'table.php'],
-            ['link' => 'Калькулятор', 'href' => 'calc.php']
+            ['link' => 'Домой','href' => '../index.php'],
+            ['link' => 'О нас','href' => 'about.php'],
+            ['link' => 'Контакты','href' => 'contact.php'],
+            ['link' => 'Таблица','href' => 'table.php'],
+            ['link' => 'Калькулятор','href' => 'calc.php']
         ];
         ?>
         
