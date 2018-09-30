@@ -21,6 +21,8 @@
             <br />
             <p><a href="/lesson6/">Lesson 6</a></p>
             <br />
+            <p><a href="/lesson7/">Lesson 7 Lvl 2-1 </a></p>
+            <br />
         </div>
     </body>
 </html>
